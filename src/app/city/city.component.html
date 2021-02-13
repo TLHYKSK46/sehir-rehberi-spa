@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+    <div *ngFor="let city of cities" class="col mt-5">
+      <div class="card shadow-sm">
+        <img class="card-img-top bd-placeholder-img card-img-top" src="{{city}}" alt="Card İmage App">
+        <div class="card-body">
+          <h5 class="card-title">{{city.name}}</h5>
+          <p class="card-text">{{city.description}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
