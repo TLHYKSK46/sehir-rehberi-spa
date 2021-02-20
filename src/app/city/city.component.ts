@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Component, OnInit } from '@angular/core';
 import { City } from '../models/city';
 import { CityService } from '../services/city.service';
@@ -12,7 +12,7 @@ import { CityService } from '../services/city.service';
 export class CityComponent implements OnInit {
 
   constructor(private cityService: CityService) { }
-  cities: City[] | undefined
+ public cities: City[] | undefined
   ngOnInit() {
     this.cityService.getCities().subscribe(data => {
       this.cities = data
@@ -20,5 +20,6 @@ export class CityComponent implements OnInit {
     })
 
   }
-
 }
+
+

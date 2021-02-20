@@ -3,7 +3,7 @@ import { Photo } from "./Photo";
 export class City {
   id!:number;
   name!: string;
-  description:string | undefined;
+  description:string |any;
   userId!:number;
   photos!:Photo[];
 }
